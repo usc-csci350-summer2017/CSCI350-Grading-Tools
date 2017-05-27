@@ -24,4 +24,4 @@ In the *documents* directory, you will find the following files:
 You'll need to have scraped the student repositories before you use these scripts. Here are some musts for the scripts to work:
 
 1. Place the submission repository one directory up (../)
-2. You must name your repo directory as *submissions_proj<\i>*
+2. You must name your repo directory as *submissions_proj< i>*
