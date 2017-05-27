@@ -24,7 +24,7 @@ In the *documents* directory, you will find the following files:
 You'll need to have scraped the student repositories before you use these scripts. Here are some musts for the scripts to work:
 
 1. Place the submission repository one directory up (../).
-2. You must name your repo directory as *submissions_proj_i_* replacing the *< i >* with the project number (eg. "*submissions_proj2*").
+2. You must name your repo directory as *submissions_proj__i__* replacing the *< i >* with the project number (eg. "*submissions_proj2*").
 3. You must create a directory named "*DESIGNDOC*" in the submissions directory.
 4. You must create a directory named "*GRADES*" in the submissions directory.
 
