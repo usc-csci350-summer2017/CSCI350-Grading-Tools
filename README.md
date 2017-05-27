@@ -42,7 +42,7 @@ The designdoc script simply copies every student's designdoc and places it under
 To run the script, simply enter in the command line:
 
 ```
-$ python designdoc_proj\<i\>.py \<repos\>.csv
+$ python designdoc_proj<i>.py <repos>.csv
 ```
 
 Replacing \<i\> with the project number and the \<repos\> with the repo csv filename.
