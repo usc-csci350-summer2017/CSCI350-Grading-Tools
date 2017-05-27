@@ -35,7 +35,7 @@ Also, each student's repo must be organized in a specific manner:
 
 You'll also need to have a csv file ready with all the student's repo names. The format is simply the repo name (eg. pintos-ttrojan) on each line. Please make sure to include an empty line at the end of the file, otherwise the last line will be omitted from the script.
 
-### Designdoc Script
+### designdoc Script
 
 The designdoc script simply copies every student's designdoc and places it under the DESIGNDOC driectory in the submissions repo with the student's username in the filename. It simply allows quick access to every student's designdoc.
 
@@ -46,3 +46,21 @@ $ python designdoc_proj<i>.py <repos>.csv
 ```
 
 Replacing \<i\> with the project number and the \<repos\> with the repo csv filename.
+
+### make_grade Script
+
+The make_grade script compiles and runs "make grade" on every student's repo, then copies the relevant number of tests passing information from the grade report generated to the GRADES directory in the submission repo.
+
+To run the script, simply enter in the command line:
+
+```
+$ python make_grade_proj<i>.py <repos>.csv
+```
+
+Replacing \<i\> with the project number and the \<repos\> with the repo csv filename. Note that this script will run for a very long time as it needs to compile and run every pintos test for every studnet's submission. You might want to split the grading up into batches (hence the two csv files repos_all.csv for every student repo name and repos.csv for a subset), or running it on a dedicated machine overnight.
+
+Every once in a while a student's submission will infinitely loop the grading script. Usually the pintos tests have a timeout that will fail the test automatically, but in some strange circumstances the script will still get stuck. If you suspect a student's submission is clogging up the script, simply remove the student from the csv and grade it manually.
+
+## Closing Remarks
+
+If you have any questions, feel free to contact me at stephen.sher.94@gmail.com. I'll try to help as much as I can. Have fun and happy grading!
