@@ -24,6 +24,16 @@ In the *documents* directory, you will find the following files:
 You'll need to have scraped the student repositories before you use these scripts. Here are some musts for the scripts to work:
 
 1. Place the submission repository one directory up (../).
-2. You must name your repo directory as *submissions_proj< i >* replacing the *< i >* with the project number (eg. "*submissions_proj2*"").
-3. You must create a directory named "DESIGNDOC" in the submissions directory.
-4. You must create a directory named "GRADES" in the submissions directory.
+2. You must name your repo directory as *submissions_proj<`i>* replacing the *< i >* with the project number (eg. "*submissions_proj2*").
+3. You must create a directory named "*DESIGNDOC*" in the submissions directory.
+4. You must create a directory named "*GRADES*" in the submissions directory.
+
+Also, each student's repo must be organized in a specific manner:
+
+1. Each project must be named "*proj< i >#"
+
+You'll also need to have a csv file ready with all the student's repo names. The format is simply the repo name (eg. pintos-ttrojan) on each line. Please make sure to include an empty line at the end of the file, otherwise the last line will be omitted from the script.
+
+### Designdoc Script
+
+The designdoc script simply 
