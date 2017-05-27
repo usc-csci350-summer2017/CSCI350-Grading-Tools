@@ -30,10 +30,17 @@ You'll need to have scraped the student repositories before you use these script
 
 Also, each student's repo must be organized in a specific manner:
 
-1. Each project must be named "*proj\<i\>*"
+1. Each project must be named "*proj\<i\>*" in the root directory (eg. "proj2")
+2. The designdoc must be named "DESIGNDOC" and placed under each respective project's main source directory. For example for project 2, the designdoc must be named "DESIGNDOC" and placed under "proj2/src/userprog/".
 
 You'll also need to have a csv file ready with all the student's repo names. The format is simply the repo name (eg. pintos-ttrojan) on each line. Please make sure to include an empty line at the end of the file, otherwise the last line will be omitted from the script.
 
 ### Designdoc Script
 
-The designdoc script simply 
+The designdoc script simply copies every student's designdoc and places it under the DESIGNDOC driectory in the submissions repo with the student's username in the filename. It simply allows quick access to every student's designdoc.
+
+To run the script, simply enter in the command line:
+
+```
+$ Hello world
+```
