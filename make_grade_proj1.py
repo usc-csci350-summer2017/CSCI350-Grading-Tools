@@ -21,14 +21,15 @@ def shell(command, cwd=None):
 
 with open(CSV_FILENAME) as infile:
 	for line in infile:
-		NAME = line[7:-1]
-		PATH = line[:-1]
+		NAME = line.strip()
+		#NAME = line[7:-1]
+		#PATH = line[:-1]
 		try:
-			shell('make grade', '../submissions_proj1/' + PATH + '/proj1/src/threads')
+			shell('make grade', '../submissions_proj1/' + NAME + '/proj1/src/threads')
 			shell('touch GRADE_' + NAME, '../submissions_proj1/GRADE/')
 			writefile = open('../submissions_proj1/GRADE/GRADE_' + NAME, 'w');
 			try:
-				with open('../submissions_proj1/' + PATH + '/proj1/src/threads/build/grade') as gradefile:
+				with open('../submissions_proj1/' + NAME + '/proj1/src/threads/build/grade') as gradefile:
 					#get to line 29
 					counter = 1
 					for gradeline in gradefile:
@@ -44,4 +45,4 @@ with open(CSV_FILENAME) as infile:
 			except IOError:
 				sleep(0)
 		except OSError:
-			print("Repo " + PATH + " does not follow course directory setup convention. Must grade manually\n")
+			print("Repo " + NAME + " does not follow course directory setup convention. Must grade manually\n")
